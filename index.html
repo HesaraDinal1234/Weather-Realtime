@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Update</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="weather-container">
+        <h1>Weather Update</h1>
+        <div class="input-group">
+            <input type="text" id="city" placeholder="Enter city name" aria-label="City Name">
+            <button id="getWeatherBtn">Get Weather</button>
+        </div>
+        <div id="weatherInfo">
+            <div id="loading" class="hidden">Loading...</div>
+            <p id="temperature"></p>
+            <p id="humidity"></p>
+            <p id="windSpeed"></p>
+            <p id="description"></p>
+        </div>
+        <div id="error" class="hidden">City not found. Please try again.</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
